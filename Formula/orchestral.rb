@@ -1,25 +1,25 @@
 class Orchestral < Formula
   desc "Runtime for reliable, interactive AI agents"
   homepage "https://orch.pandaailabs.com"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/sizzlecar/orchestral/releases/download/v0.3.1/orchestral-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "681391e08593c3e6869f8e2fd59207534b6a0eaf4f761cee9b236bee6a63c870"
+      url "https://github.com/sizzlecar/orchestral/releases/download/v0.4.0/orchestral-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "acb8e1296c0641b8cf4b986ee12b23dc13ffcf41d5430f7018397eecb354e2d4"
     end
     on_intel do
-      url "https://github.com/sizzlecar/orchestral/releases/download/v0.3.1/orchestral-v0.3.1-x86_64-apple-darwin.tar.gz"
-      sha256 "7456486ba8eaaa70c0f956555719dacdffb2189b251b5ec0d07de58fb07601f9"
+      url "https://github.com/sizzlecar/orchestral/releases/download/v0.4.0/orchestral-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7c6e6413bd59d7b892f7cbfe0adca85f261dd4c2b97a61e8a11b246c39dd61ab"
     end
   end
 
   on_linux do
     depends_on arch: :x86_64
     depends_on "bubblewrap"
-    url "https://github.com/sizzlecar/orchestral/releases/download/v0.3.1/orchestral-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8d1393bd1a568f93ad5a9492aa215baf636353b3a933d5bdb7a7c726fc922015"
+    url "https://github.com/sizzlecar/orchestral/releases/download/v0.4.0/orchestral-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "41f36e08be077691de205eca168faa3bc65a623014fc4a0d235385dbdcb7cc59"
   end
 
   def install
